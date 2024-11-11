@@ -15,7 +15,7 @@ RELEASE="$(rpm -E %fedora)"
 # this installs a package from fedora repos
 
 # Add repo
-rpm-ostree install https://download.opensuse.org/repositories/home:Alxhr0/Fedora_41/home:Alxhr0.repo
+wget https://download.opensuse.org/repositories/home:Alxhr0/Fedora_41/home:Alxhr0.repo -P /etc/yum.repos.d
 
 rpm-ostree install VirtualBox virt-manager libvirt kf6-servicemenus-imagetools merkuro nextcloud-client
 
