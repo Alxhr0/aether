@@ -17,10 +17,7 @@ RELEASE="$(rpm -E %fedora)"
 # Add repo
 wget https://download.opensuse.org/repositories/home:Alxhr0/Fedora_41/home:Alxhr0.repo -P /etc/yum.repos.d
 
-rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-41.noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-41.noarch.rpm
-
-
-rpm-ostree install VirtualBox virt-manager libvirt kf6-servicemenus-imagetools merkuro nextcloud-client
+rpm-ostree install virt-manager libvirt kf6-servicemenus-imagetools merkuro nextcloud-client
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
