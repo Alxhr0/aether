@@ -13,7 +13,11 @@ RELEASE="$(rpm -E %fedora)"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-rpm-ostree install screen
+
+# Add repo
+rpm-ostree install https://download.opensuse.org/repositories/home:Alxhr0/Fedora_41/home:Alxhr0.repo
+
+rpm-ostree install VirtualBox virt-manager libvirt kf6-servicemenus-imagetools merkuro nextcloud-client
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
